@@ -1,0 +1,45 @@
+nav {
+	margin:-16px; 
+	text-align: center;
+}
+nav ul ul {
+	display: none;
+}
+nav ul li:hover > ul {
+	display: block;
+}
+nav ul {
+	background: lightgreen; 
+	padding: 0 0px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+nav ul:after {
+	content: ""; clear: both; display: block;
+}
+nav ul li {
+	float: left;
+}
+nav ul li:hover {
+	background: #666;
+}
+nav ul li a {
+	display: block; padding: 10px 19px;
+	text-decoration: none;
+}		
+nav ul ul {
+	background: #53bd84; padding: 0;
+	position: absolute;
+}
+nav ul ul li {
+	float: none; 
+	border-top: 1px solid #53bd84;
+	border-bottom: 1px solid #53bd84; position: relative;
+}
+nav ul ul li a {
+	padding: 10px 19px;
+}	
+nav ul ul li a:hover {
+	background: lightgreen;
+}
